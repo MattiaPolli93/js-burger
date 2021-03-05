@@ -1,5 +1,44 @@
+/* Properties */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #fff5e2;
+}
+
+.wrapper {
+    background-color: #fff;
+    max-width: 700px;
+    height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #fdbb40;
+    height: 100px;
+    position: relative;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 40px 0 0 30px;
+}
+
+.img-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(45%, -10%);
+}
+
+.img-box img {
+    width: 180px;
+}
+
+/* Main */
+
+/* Footer */
