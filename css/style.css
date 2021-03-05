@@ -47,14 +47,12 @@ main {
     overflow: auto;
 }
 
-.ingredients {
-    max-width: 70%;
-}
-
+/* Burger name */
 #burger-name {
     width: 80%;
     height: 50px;
     border: none;
+    cursor: pointer;
 }
 
 #burger-name::placeholder {
@@ -66,21 +64,41 @@ main {
     opacity: 1;
 }
 
+.ingredients {
+    width: 100%;
+}
+
+.ingredients h2 {
+    margin: 25px 0 20px;
+}
+
+/* Ingredients */
 .list {
     display: flex;
     justify-content: space-between;
 }
 
+.list ul {
+    flex-basis: 50%;
+}
+
 .list li {
     list-style: none;
-    width: 40%;
-
+    margin: 15px 0;
 }
 
 .list img {
-    display: ;
+    width: 15%;
     vertical-align: middle;
-    width: 20%;
+}
+
+.list label {
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.add-color {
+    color: #d33359;
 }
 
 /* Discount coupon */
@@ -118,6 +136,7 @@ main {
     background-color: #fdbb40;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Footer */
