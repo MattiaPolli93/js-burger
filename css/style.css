@@ -44,6 +44,7 @@ h1 {
 main {
     padding: 35px 0 30px 30px;
     height: calc(100% - 180px);
+    overflow: auto;
 }
 
 .ingredients {
@@ -72,12 +73,53 @@ main {
 
 .list li {
     list-style: none;
+    width: 40%;
 
 }
 
+.list img {
+    display: ;
+    vertical-align: middle;
+    width: 20%;
+}
+
+/* Discount coupon */
+.discount {
+    padding: 30px 0;
+}
+
+.discount label {
+    font-weight: 600;
+}
+
+.discount input {
+    width: 60%;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10px;
+    padding: 2px 0 2px 5px;
+}
+
+#coupon::placeholder {
+    background-color: #fdbb40;
+    height: 20px;
+}
+
+/* Button */
 .calculate {
     text-align: center;
+    margin-bottom: 15px;
 }
+
+#calculate {
+    width: 100px;
+    height: 35px;
+    font-weight: 600;
+    background-color: #fdbb40;
+    border: none;
+    border-radius: 5px;
+}
+
 /* Footer */
 footer {
     display: flex;
@@ -86,7 +128,7 @@ footer {
     color: #fff;
     background-color: #d33359;
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 700;
     height: 80px;
     padding: 0 30px;
 }
