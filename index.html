@@ -8,7 +8,71 @@
     <title>Create Your Burger</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <header>
+            <h1>Create Your Burger</h1>
+        </header>
+
+        <main>
+            <!-- Burger name -->
+            <input id="burger-name" type="text" placeholder="Give a Name to your Burger">
+
+            <!-- Add-ingredients list -->
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>
+                        <label for="cheese">Cheese
+                            <input id="cheese" type="checkbox" value="5"> add
+                        </label>
+                    </li>
+                    <li>
+                        <label for="egg">Egg
+                            <input id="egg" type="checkbox" value="5"> add
+                        </label>
+                    </li>
+                    <li>
+                        <label for="mustard">Mustard
+                            <input id="mustard" type="checkbox" value="5"> add
+                        </label>
+                    </li>
+                    <li>
+                        <label for="tomato">Tomato
+                            <input id="tomato" type="checkbox" value="5"> add
+                        </label>
+                    </li>
+                    <li>
+                        <label for="lettuce">Lettuce
+                            <input id="lettuce" type="checkbox" value="5"> add
+                        </label>
+                    </li>
+                    <li>
+                        <label for="ketchup">Ketchup
+                            <input id="ketchup" type="checkbox" value="5"> add
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="discount">
+                <label for="coupon">Discount Coupon
+                    <input id="coupon" type="text" placeholder="winner1">
+                </label>
+            </div>
+            <div class="calculate">
+                <button id="calculate">Calculate</button>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <span>Your Price</span>
+            </div>
+            <div>
+                <span id="total">50</span> €
+            </div>
+        </footer>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
