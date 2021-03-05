@@ -24,7 +24,7 @@ header {
 
 h1 {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700;
     padding: 40px 0 0 30px;
 }
 
@@ -37,8 +37,56 @@ h1 {
 
 .img-box img {
     width: 180px;
+    height: auto;
 }
 
 /* Main */
+main {
+    padding: 35px 0 30px 30px;
+    height: calc(100% - 180px);
+}
 
+.ingredients {
+    max-width: 70%;
+}
+
+#burger-name {
+    width: 80%;
+    height: 50px;
+    border: none;
+}
+
+#burger-name::placeholder {
+    height: 2px;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: #000;
+    opacity: 1;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list li {
+    list-style: none;
+
+}
+
+.calculate {
+    text-align: center;
+}
 /* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: #d33359;
+    font-size: 25px;
+    font-weight: 600;
+    height: 80px;
+    padding: 0 30px;
+}
