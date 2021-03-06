@@ -59,8 +59,7 @@ main {
     height: 2px;
     font-size: 25px;
     font-weight: bold;
-    font-style: italic;
-    color: #000;
+    color: #757575;
     opacity: 1;
 }
 
@@ -89,16 +88,57 @@ main {
 
 .list img {
     width: 15%;
-    vertical-align: middle;
 }
 
 .list label {
     font-weight: 600;
     margin-left: 20px;
+    position: relative;
+}
+
+.label-box {
+    cursor: pointer;
+}
+
+.label-box input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.label-box input:checked ~ .checkmark .tick {
+    display: block;
+}
+
+.checkmark {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    background-color: #d33359;
+}
+
+.tick {
+    display: none;
+    content: "";
+    margin-left: 3px;
+    width: 9px;
+    height: 16px;
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    transform: rotate(45deg);
 }
 
 .add-color {
     color: #d33359;
+    margin-left: 10px;
+}
+
+.list img,
+.checkmark,
+.add-color {
+    vertical-align: middle;
 }
 
 /* Discount coupon */
@@ -111,7 +151,7 @@ main {
 }
 
 .discount input {
-    width: 60%;
+    width: 70%;
     border: none;
     border-radius: 15px;
     margin-left: 10px;
